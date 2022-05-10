@@ -1,0 +1,251 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or
+page.header.image %} {% include page__hero.html %} {% elsif page.header.video.id
+and page.header.video.provider %} {% include page__hero_video.html %} {% endif
+%}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta
+      itemprop="headline"
+      content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}"
+    />{% endif %} {% if page.excerpt %}<meta
+      itemprop="description"
+      content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+    />{% endif %} {% if page.date %}<meta
+      itemprop="datePublished"
+      content="{{ page.date | date_to_xmlschema }}"
+    />{% endif %} {% if page.last_modified_at %}<meta
+      itemprop="dateModified"
+      content="{{ page.last_modified_at | date_to_xmlschema }}"
+    />{% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+
+      <div class="landing-body">
+
+        <section id="how-it-works" class="">
+
+            <h1>How it works</h1>
+            <p>
+              Get started in 3 easy steps
+            </p>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step-content">
+                  <h3>
+                    <span
+                      class="number"
+                      >1</span
+                    >
+                    Register
+                  </h3>
+                  <div class="step-underline"></div>
+                  <p>Register on the WeConnect platform.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-content">
+                  <h3>
+                    <span
+                      class="number"
+                      >2</span
+                    >
+                    Verify
+                  </h3>
+                  <div class="step-underline"></div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-content">
+                  <h3>
+                    <span
+                      class="number"
+                      >3</span
+                    >
+                    Connect
+                  </h3>
+                  <div class="step-underline"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+        </section>
+
+        <section id="features" class="">
+            <img src="/assets/images/bg-crop.jpg" class="bg-img img-light"/>
+            <h1>Features</h1>
+
+            <div class="features-content">
+                <div class="feature">
+                  <div class="rounded-full"> 
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <div class="lead">
+                    No interest, no hidden cost
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="feature">
+                  <div class="rounded-full">
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <div class="lead">
+                    Faster rate of approval
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="feature">
+                  <div class="rounded-full">
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <div class="lead">
+                    No lines, no paperwork
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="feature">
+                  <div class="rounded-full">
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <div class="lead">
+                    Advance security
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="onboarding" class="">
+
+            <h1>Effortless Onboarding</h1>
+            <div class="onboard-steps">
+                <div class="card">
+                    <h3>
+                      <span
+                        class="number"
+                        >1</span
+                      >
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card">
+                    <h3>
+                      <span
+                        class="number"
+                        >2</span
+                      >
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="card">
+                    <h3>
+                      <span
+                        class="number"
+                        >3</span
+                      >
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+        </section>
+
+        <section id="benefits" class="">
+            <img src="/assets/images/bg-crop.jpg" class="bg-img img-light"/>
+
+            <div class="benefits-content">
+                <h1>Benefits</h1>
+
+                <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <div class="benefit card">
+                  <div class="rounded-full"> 
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="benefit card">
+                  <div class="rounded-full">
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="benefit card">
+                  <div class="rounded-full">
+                    <span class="iconify" data-icon="ant-design:check-circle-outlined"></span>
+                  </div>
+                  <p class="">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs">
+            <h1>Have some questions?</h1>
+
+            <div class="faq-questions"> 
+
+                <div id="q1" class="faq-question">
+                    <a id="t1" class="faq-title">
+                      <span class="iconify" data-icon="il:arrow-down"></span>
+                      What do I need to register?
+                    </a>
+                    <div id= "c1" class="faq-content">
+                        <p class="faq-paragraph">
+                            answer... 
+                        </p>
+                    </div>
+                </div>
+
+                <div id="q2" class="faq-question">
+                  <a id="t2" class="faq-title">
+                    <span class="iconify" data-icon="il:arrow-down"></span>
+                    What do I need to register?
+                  </a>
+                  <div id= "c2" class="faq-content">
+                      <p class="faq-paragraph">
+                          answer... 
+                      </p>
+                  </div>
+              </div>
+
+            </div>   
+        </section>
+
+        <section id="cta" class="">
+            <div class="">
+                <p>slogon</p>
+                <h3>Get connected... </h3>
+            </div>
+            <button class="btn btn--primary btn--medium">Get WeConnect</button>
+        </section>
+
+      </div>
+    </section>
+  </article>
+</div>
