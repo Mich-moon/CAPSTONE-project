@@ -231,7 +231,7 @@ section {
 .team-container {
     display: flex;
     justify-content: center;
-    background-image: url(/assets/images/back.jpg);
+    background-image: url("{{ site.baseurl }}/assets/images/back.jpg");
     background-size: 100% 25%;
     background-repeat: no-repeat;
 }
