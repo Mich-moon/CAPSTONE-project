@@ -8,7 +8,7 @@ header:
   overlay_image: /assets/images/bg.jpg
   actions:
     - label: "Register"
-      url: "/docs/about/"
+      url: "https://weconnect-omnix.netlify.app/auth"
 excerpt: >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
 ---

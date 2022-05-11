@@ -16,6 +16,10 @@
     padding: 0;
     width: 100%;
 }
+#masthead_btn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
 section {
     padding-bottom: 5em;
     padding-top: 2em;
@@ -67,16 +71,16 @@ section {
 #features {
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 243, 243);
     width: 100%;
     height: auto;
     margin-bottom: 1em;
 
-    p, h1 {
+    p {
         margin: 0 auto;
     }
     h1 {
-        margin-bottom: 1em;
+        margin: 1em auto;
+        padding-top: 1em;
     }
 }
 .bg-img {
@@ -84,8 +88,8 @@ section {
     object-fit: fill;   
 }
 .img-light {
-    opacity: .09;
-    filter: grayscale(10%);
+    opacity: .4;
+    filter: grayscale(30%);
 }
 .features-content {
     display: flex;
@@ -117,10 +121,15 @@ section {
     }
 }
 
+#faqs {
+    h1 {
+        padding-top: 2em;
+    }
+}
 .faq-questions {
     display: flex;
     flex-direction: column;
-    padding: 0 6em;
+    margin: 0 6em;
 }
 .faq-question {
     display: flex;
@@ -173,7 +182,11 @@ section {
 }
 
 #benefits {
-    padding: 0 3em;
+    background-color: white;
+
+    h1 {
+        margin: 1rem 0;
+    }
 }
 .benefit {
     width: 90%;
@@ -185,9 +198,7 @@ section {
 .benefits-content {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    padding: 0 0 3em 0;
-    float: right;
+    margin: 0 1em 0 auto;
     width: 50%;
 }
 .benefit .rounded-full {
@@ -205,10 +216,10 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4em;
+    padding: 4em 9em 4em 9em;
     color: white;
 
-    button {
+    a {
         padding: 1rem; 
         margin: auto 0;
         margin-left: 2em;
@@ -232,7 +243,6 @@ section {
     display: flex;
     justify-content: center;
     background-image: url("{{ '/assets/images/back.jpg' | relative_url }}");
-    //background-image: url("{{ site.baseurl }}/assets/images/back.jpg");
     background-size: 100% 25%;
     background-repeat: no-repeat;
 }
@@ -271,6 +281,10 @@ section {
     }
 }
 
+
+.relative {
+    position: relative;
+}
 .smaller {
     font-size: smaller;
 }
