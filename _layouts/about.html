@@ -8,7 +8,7 @@ and page.header.video.provider %} {% include page__hero_video.html %} {% endif
 %} {{ content }}
 
 <div id="about-us" class="">
-  <div class="about-header">
+  <div id="about-header">
     <div class="">
       <h2>Meet Our Team</h2>
       <p>
@@ -20,7 +20,7 @@ and page.header.video.provider %} {% include page__hero_video.html %} {% endif
       </p>
     </div>
   </div>
-  <div class="team-container">
+  <div id="team-container">
     <div class="team-contents">
       <div class="team-card">
         <img
@@ -68,8 +68,32 @@ and page.header.video.provider %} {% include page__hero_video.html %} {% endif
       </div>
     </div>
   </div>
-  <div class="contact">
-    <h3 class="">Contact us</h3>
-    <form></form>
+  <div id="contact-container">
+    <img
+      src="{{ '/assets/images/bg-contact.jpg' | relative_url }}"
+      class="bg-img"
+    />
+    <form class="relative" action="">
+      <h3 class="relative">Contact us</h3>
+      <div class="form-group">
+        <div class="form-control">
+          <label class="" for="name">Name</label>
+          <input name="name" id="name" required />
+        </div>
+        <div class="form-control">
+          <label class="" for="email">Eamil</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+      </div>
+      <div class="form-control">
+        <label class="" for="subject">Subject</label>
+        <input name="subject" id="subject" required />
+      </div>
+      <div class="form-control">
+        <label class="" for="message">Message</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+      </div>
+      <button class="btn btn--primary btn--medium">SEND</button>
+    </form>
   </div>
 </div>

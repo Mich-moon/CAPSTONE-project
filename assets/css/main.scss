@@ -226,7 +226,7 @@ section {
     }
 }
 
-.about-header {
+#about-header {
     background-color: #294457;
 
     div {
@@ -239,7 +239,7 @@ section {
         margin: 0 auto;
     }
 }
-.team-container {
+#team-container {
     display: flex;
     justify-content: center;
     background-image: url("{{ '/assets/images/back.jpg' | relative_url }}");
@@ -270,15 +270,32 @@ section {
     border-radius: 50%;
     margin: auto;
 }
-.contact {
+#contact-container {
     width: 100%;
-    clear: both;
     padding: 3rem;
+    margin-top: 4em;
 
     form {
-        background-color: #d2d8dd;
-        margin: 1rem auto;
+        background-color: #858a8f5e;
+        margin: 0 auto;
+        padding: 1em 6em 1.8em 6em;
+
+        button {
+            margin: 0 1em;
+        }
+        h3 {
+            padding-left: 1rem;
+        }
     }
+}
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
 }
 
 
