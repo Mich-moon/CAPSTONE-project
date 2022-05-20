@@ -20,12 +20,9 @@
     padding-right: 1rem;
     padding-left: 1rem;
 }
-section {
-    padding-bottom: 5em;
-    padding-top: 2em;
-    margin: 0 !important;
-}
 #how-it-works, #faqs, #onboarding {
+    padding-bottom: 2em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     p, h1 {
@@ -34,6 +31,11 @@ section {
     h1 {
         margin-bottom: 1em;
     }
+}
+#how-it-works {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+
 }
 .number {
     font-size: 3em;
@@ -75,12 +77,18 @@ section {
     height: auto;
     margin-bottom: 1em;
 
+    padding: 0;
+    margin: 0;
+
     p {
         margin: 0 auto;
     }
     h1 {
         margin: 1em auto;
         padding-top: 1em;
+    }
+    img {
+        border-radius: 1em;
     }
 }
 .bg-img {
@@ -121,37 +129,15 @@ section {
     }
 }
 
-#faqs {
-    h1 {
-        padding-top: 2em;
+#onboarding {
+    padding-top: 2em;
+    margin-top: 4rem !important;
+    margin-bottom: 3rem !important;
+
+    p {
+        margin-bottom: 1rem;
     }
 }
-.faq-questions {
-    display: flex;
-    flex-direction: column;
-    margin: 0 6em;
-}
-.faq-question {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    div {
-        margin-left: 2rem;
-    }
-
-}
-.faq-title {
-    text-decoration: none;
-
-    .iconify {
-        margin: .3rem 0 .3rem 0;
-    }
-}
-.faq-content {
-    margin: 1em 3em;
-    display: none;
-}
-
 .onboard-steps {
     width: 100%;  
     display: flex;
@@ -178,12 +164,13 @@ section {
     }
     p {
         margin: auto 0rem;
+        text-align: left;
+        font-size: smaller;
     }
 }
 
 #benefits {
     background-color: white;
-
     h1 {
         margin: 1rem 0;
     }
@@ -194,11 +181,15 @@ section {
     flex-direction: row;
     padding: 1em; 
     font-size: 1rem;
+
+    p bold {
+        font-weight: 700;
+    }
 }
 .benefits-content {
     display: flex;
     flex-direction: column;
-    margin: 0 1em 0 auto;
+    margin: 0 2em 0 auto;
     width: 50%;
 }
 .benefit .rounded-full {
@@ -206,8 +197,41 @@ section {
     margin-bottom: 0;
 }
 
+
 #faqs {
     clear: both;
+    margin: 0 !important;
+    h1 {
+        padding: 2em 0em;
+    }
+}
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6em;
+}
+.faq-question {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    div {
+        margin-left: 2rem;
+    }
+
+}
+.faq-title {
+    text-decoration: none;
+
+    .iconify {
+        margin: .3rem 1rem .3rem 0;
+    }
+}
+.faq-content {
+    margin: 1em 3em;
+    padding: 1em 3em;
+    border-radius: 1rem;
+    display: none;
+    background-color: rgb(204, 229, 233);
 }
 
 #cta {
@@ -263,6 +287,11 @@ section {
     h3, p {
         margin: .2rem 0;
     }
+    h3 {
+        background-color: aliceblue;
+        padding: 1rem;
+        border-radius: 20%;
+    }
 }
 .team-pic {
     height: 80%;
@@ -298,7 +327,10 @@ section {
     margin: 0 1em;
 }
 
-
+.shadow-card {
+    box-shadow: 2px 5px 8px rgb(219, 219, 219);
+    border-radius: 1em;
+}
 .relative {
     position: relative;
 }
@@ -314,5 +346,14 @@ section {
 }
 
 .page__hero--overlay {
-    padding: 6rem 30rem 2rem 6rem !important;
+    padding: 6rem 3rem 2rem 6rem !important;
+    display: flex;
+}
+.page__content {
+    padding-bottom: 2em !important;
+}    
+
+#particle-canvas {
+    width: 100%;
+    height: 100%;
 }

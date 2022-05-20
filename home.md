@@ -7,8 +7,8 @@ header:
   overlay_filter: 0.5
   overlay_image: /assets/images/bg.jpg
   actions:
-    - label: "Register"
-      url: "https://weconnect-omnix.netlify.app/auth"
+    - label: "Sign Up"
+      url: "https://we-connect-omnix.vercel.app/"
 excerpt: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+  A central medium for Jamaicans to access reliable and relevant community-based information.
 ---
